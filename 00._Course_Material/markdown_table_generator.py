@@ -21,8 +21,10 @@ table_data = [
             - Understands encoding, serializing and marshalling. Knows about charsets and encoding types.
         """,
         "Resources and Activities": [
-            "[01a [Individual] File formats bonanza!](00._Course_Material/00._assignments/01._Introduction_Data_Formats/01._[Individual]_File_formats_bonanza!.md)",
-            "[[Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",
+            "[01a [Individual] File formats bonanza!](https://github.com/anderslatif/Kea_SOFT_SI_2024_Spring/blob/main/00._Course_Material/00._assignments/01._Introduction_Data_Formats/01a._%5BIndividual%5D_File_formats_bonanza!.md)",
+            "[test1](../00._assignments/01._Introduction_Data_Formats/00._%5BIndividual%5D_Azure_For_Students.md)",
+            "[test1](../00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",
+            "[[Individual] Azure for Students](https://github.com/anderslatif/Kea_SOFT_SI_2024_Spring/blob/main/00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._%5BIndividual%5D_Azure_For_Students.md)",
           
         ]
     },
@@ -55,7 +57,7 @@ table_data = [
         """,
         "Resources and Activities": [
             "[[02a [Individual] Data format translation servers - Part II](00._Course_Material/00._assignments/02._Data/02a._[Individual]_Data_format_translation_servers_-_Part_II.md)",
-            "[[Optional] Serialize / Marshall data](00._Course_Material/00._assignments/02._Data/00._[Optional]_Serialize__Marshall_data.md)",
+            "[[Optional] Serialize / Marshall data](https://github.com/anderslatif/Kea_SOFT_SI_2024_Spring/blob/main/00._Course_Material/00._assignments/02._Data/00._%5BOptional%5D_Serialize__Marshall_data.md)",
           
         ]
     },
