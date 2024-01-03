@@ -22,10 +22,7 @@ table_data = [
         """,
         "Resources and Activities": [
             "[01a [Individual] File formats bonanza!](https://github.com/anderslatif/Kea_SOFT_SI_2024_Spring/blob/main/00._Course_Material/00._assignments/01._Introduction_Data_Formats/01a._%5BIndividual%5D_File_formats_bonanza!.md)",
-            "[test1](../00._assignments/01._Introduction_Data_Formats/00._%5BIndividual%5D_Azure_For_Students.md)",
-            "[test1](../00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",
-            "[[Individual] Azure for Students](https://github.com/anderslatif/Kea_SOFT_SI_2024_Spring/blob/main/00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._%5BIndividual%5D_Azure_For_Students.md)",
-          
+            "[[Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",          
         ]
     },
     {
