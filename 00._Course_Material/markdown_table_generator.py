@@ -22,7 +22,7 @@ table_data = [
         """,
         "Resources and Activities": [
             "[01a [Individual] File formats bonanza!](00._Course_Material/00._assignments/01._Introduction_Data_Formats/01a._%5BIndividual%5D_File_formats_bonanza!.md)",
-            "[[Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",          
+            "[Resource: [Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",          
         ]
     },
     {
@@ -88,7 +88,7 @@ table_data = [
             - Knows how to define environment variables in different languages.
         """,
         "Resources and Activities": [
-            "[03. [Pair] Database granular access](00._Course_Material/00._assignments/03._Server_to_server_Real-time_communication_-_Part_I/03a._[Pair]_Database_granular_access.md)",          
+            "[03a [Pair] Database granular access](00._Course_Material/00._assignments/03._Server_to_server_Real-time_communication_-_Part_I/03a._[Pair]_Database_granular_access.md)",          
         ]
     },
     {
