@@ -21,8 +21,8 @@ table_data = [
             - Understands encoding, serializing and marshalling. Knows about charsets and encoding types.
         """,
         "Resources and Activities": [
-            "[01a [Individual] File formats bonanza!](00._assignments/01._Introduction_Data_Formats/01._[Individual]_File_formats_bonanza!.md)",
-            "[[Individual] Azure for Students](00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",
+            "[01a [Individual] File formats bonanza!](00._Course_Material/00._assignments/01._Introduction_Data_Formats/01._[Individual]_File_formats_bonanza!.md)",
+            "[[Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md)",
           
         ]
     },
@@ -54,8 +54,8 @@ table_data = [
             - Can work with modules in Python / Javascript (frontend and backend).
         """,
         "Resources and Activities": [
-            "[[02a [Individual] Data format translation servers - Part II](00._assignments/02._Data/02a._[Individual]_Data_format_translation_servers_-_Part_II.md)",
-            "[[Optional] Serialize / Marshall data](00._assignments/02._Data/00._[Optional]_Serialize__Marshall_data.md)",
+            "[[02a [Individual] Data format translation servers - Part II](00._Course_Material/00._assignments/02._Data/02a._[Individual]_Data_format_translation_servers_-_Part_II.md)",
+            "[[Optional] Serialize / Marshall data](00._Course_Material/00._assignments/02._Data/00._[Optional]_Serialize__Marshall_data.md)",
           
         ]
     },
@@ -89,7 +89,7 @@ table_data = [
             - Knows how to define environment variables in different languages.
         """,
         "Resources and Activities": [
-            "03. [Pair] Database granular access](00._assignments/03._Server_to_server_Real-time_communication_-_Part_I/03a._[Pair]_Database_granular_access.md)",          
+            "03. [Pair] Database granular access](00._Course_Material/00._assignments/03._Server_to_server_Real-time_communication_-_Part_I/03a._[Pair]_Database_granular_access.md)",          
         ]
     },
     {
@@ -122,7 +122,7 @@ table_data = [
             - Can create virtual machines without aid on your favorite hosting platform.
         """,
         "Resources and Activities": [
-            "04a [Individual] Create OpenAPI Documentation](00._assignments/04._Documentation/04a._[Individual]_Create_OpenAPI_Documentationss.md)", 
+            "04a [Individual] Create OpenAPI Documentation](00._Course_Material/00._assignments/04._Documentation/04a._[Individual]_Create_OpenAPI_Documentationss.md)", 
             "[Resource: Video on OpenAPI](https://www.youtube.com/watch?v=pRS9LRBgjYg)"         
         ]
     },
@@ -148,8 +148,8 @@ table_data = [
             - Understands how to approach building a custom webhook system.
         """,
         "Resources and Activities": [
-            "05a [Individual] SSE example](00._assignments/05._Real-time_communication_-_Part_II/05a._[Individual]_SSE_example.md)", 
-            "05b [Pair] Expose and integrate with a webhook system](00._assignments/05._Real-time_communication_-_Part_II/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md", 
+            "05a [Individual] SSE example](00._Course_Material/00._assignments/05._Real-time_communication_-_Part_II/05a._[Individual]_SSE_example.md)", 
+            "05b [Pair] Expose and integrate with a webhook system](00._Course_Material/00._assignments/05._Real-time_communication_-_Part_II/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md", 
         ]
     },
     {
