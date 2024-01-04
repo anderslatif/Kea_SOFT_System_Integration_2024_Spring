@@ -6,6 +6,7 @@ System Integration
 
 ## Semesterplan
 
+
 | Title | Date | Description | Learning Goals | Resources and Activities |
 | --- | --- | --- | --- | --- |
 | Introduction + Data Formats | Feb. 1st | <br>            - Data encoding <br><br>            - Hashing, serializing, marshalling<br><br>            - Packages eco system in Node and Python<br><br>            - REST APIs<br>         | <br><br>            - Can argue about different build tools for Python and understands their pros and cons. <br><br>            - Can use poetry. <br><br>            - Understands encoding, serializing and marshalling. Knows about charsets and encoding types.<br>         | [01a [Individual] File formats bonanza!](00._Course_Material/00._assignments/01._Introduction_Data_Formats/01a._%5BIndividual%5D_File_formats_bonanza!.md)<br><br>[Resource: [Individual] Azure for Students](00._Course_Material/00._assignments/01._Introduction_Data_Formats/00._[Individual]_Azure_For_Students.md) |
@@ -15,4 +16,3 @@ System Integration
 | Real-time communication - Part II | Feb. 29th | <br>            - Client polling, short polling, long polling.<br><br>            - Server-sent events<br><br>            - Webhooks<br>         | <br>            - Understands client polling, short polling, long polling and the pros and cons of each approach.<br><br>            - Understands SSE and can explain how to implement it. Has an example ready. <br><br>            - Understands the pros and cons of SSE and can compare it to Websockets. <br><br>            - Can recall how we did Github Wehooks without having to be able to do it on the fly. Can illustrate exactly how it works by drawing a diagram.<br><br>            - Understands how to approach building a custom webhook system.<br>         | [05a [Individual] SSE example](00._Course_Material/00._assignments/05._Real-time_communication_-_Part_II/05a._[Individual]_SSE_example.md)<br><br>[05b [Pair] Expose and integrate with a webhook system](00._Course_Material/00._assignments/05._Real-time_communication_-_Part_II/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md) |
 | Cloud | March 7th | <br>                Azure:<br>                - Virtual Machines<br>                - Blob Storage<br>                - Functions<br><br>                Terraform<br>         | <br>            - Can create serverless functions (AWS Lambda, Azure Functions, Vercel etc).<br>         |  |
 | No Lecture | March 14th | <br>            Work on the homework. <br>         | <br>         |  |
-

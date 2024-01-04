@@ -1,3 +1,5 @@
+import re
+
 # todo add Google Drive link to slides and Github link in Teams
 table_data = [
     {
@@ -205,6 +207,37 @@ def generate_markdown_table(data):
     return "\n".join(table_rows)
 
 
-markdown_table = generate_markdown_table(table_data)
+def replace_section_in_file(file_path, section_title, new_content):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
 
-print(markdown_table)
+    # Identify the section to replace
+    section_start = None
+    for i, line in enumerate(lines):
+        if line.strip() == f"## {section_title}":
+            section_start = i + 1
+            break
+
+    if section_start is None:
+        return  # Section title not found
+
+    # Find the end of the section
+    section_end = None
+    for i in range(section_start, len(lines)):
+        if lines[i].startswith("## "):
+            section_end = i
+            break
+
+    # Replace the section content
+    if section_end is not None:
+        lines[section_start:section_end] = [new_content + '\n']
+    else:  # If the section goes until the end of the file
+        lines[section_start:] = [new_content + '\n']
+
+    # Write back to the file
+    with open(file_path, 'w') as file:
+        file.writelines(lines)
+
+
+markdown_table = generate_markdown_table(table_data)
+replace_section_in_file('../README.md', 'Semesterplan', "\n\n" + markdown_table)

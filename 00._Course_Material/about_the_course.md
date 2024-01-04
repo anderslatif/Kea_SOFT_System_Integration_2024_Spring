@@ -4,6 +4,7 @@
 **Teams**: Communication and hand-ins.
 **Google Docs**: Contains slides and diagrams.  
 
+After the semester the repositories will be made private and uploaded as zip files to Teams. 
 
 Feel free to make PRs. This is the reason why I’ve defined a lot of the material in Git.
 
