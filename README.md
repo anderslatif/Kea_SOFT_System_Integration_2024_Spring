@@ -2,7 +2,7 @@
 
 System Integration
 
-[About This Course](./00._Course_Material/about_this_course.md)
+[About This Course](./00._Course_Material/00._Meta_Course_Material/about_this_course.md)
 
 ## Semesterplan
 
