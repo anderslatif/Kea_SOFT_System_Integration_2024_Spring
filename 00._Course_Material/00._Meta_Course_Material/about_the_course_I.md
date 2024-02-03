@@ -81,7 +81,7 @@ Reflect on the learned content, go through the slides and update your notes. Hav
 
 The ideal effort put into the course if you prepare continuously. Note that the top part should be non-stressful effort:
 
-[Semester work load](./course_documents/semester_work_load.png)
+[Semester work load](./semester_work_load.png)
 
 
 ## Multiple programming languages
