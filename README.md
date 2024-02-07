@@ -1,10 +1,12 @@
-# Kea_SOFT_SI_2024_Spring
+# system_integration_semester_plan
 
-System Integration
+## About the course
 
-[About This Course](./00._Course_Material/00._Meta_Course_Material/about_the_course_I.md)
+[About the course](00._Course_Material/00._Meta_Course_Material/about_the_course.md)
 
-## Semesterplan
+[About the exam](00._Course_Material/00._Meta_Course_Material/about_the_exam.md)
+
+## Semester Plan
 
 
 | Title | Date | Description | Learning Goals | Resources and Activities |
