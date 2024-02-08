@@ -8,8 +8,7 @@
 
 *standards, standards, standards*
 
-*language agnostic hmppff*
-
+*system integration === language agnostic **hmppff***
 
 ## The course platforms tools
 
@@ -78,6 +77,10 @@ We will use it during class. Feel free to enable it or not. The problem of using
 #### After the class
 
 Reflect on the learned content, go through the slides and update your notes. Having these notes will make it easy to read up for the exam. 
+
+###### A note about hand-ins
+
+You will not get feedback on hand-ins because that's what you will draw for the exam. You have to make extra due dillegence to ensure that you understand the topics correctly. Feel free to ask in the Teams channel. 
 
 ## The overall structure of the semester
 
