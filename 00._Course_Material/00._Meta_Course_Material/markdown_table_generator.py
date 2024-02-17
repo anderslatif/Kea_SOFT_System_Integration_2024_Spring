@@ -61,6 +61,8 @@ table_data = [
         "Description": """
             - Communication
 
+            - Protocols (TCP / UDP)
+
             - Making a server act as a client to another server.
 
             - Environment Variables (OS level, Runtime environment level)
@@ -70,8 +72,6 @@ table_data = [
             - Knows about different communication protocols on a superficial level.
 
             - Knows how to make a HTTP requests between languages. 
-
-            - Can use ngrok
 
             - Understand the different levels of environment variables and how they differ. 
 
@@ -96,6 +96,8 @@ table_data = [
             - Webhooks
         """,
         "Learning Goals": """
+            - Can use ngrok
+
             - Understand how date affects systems and communication between services.
 
             - Understands challenges and edge cases when working with date and why this is important during integration.
@@ -140,8 +142,6 @@ table_data = [
             - Swagger + Express/FastAPI/Spring
 
             - Architecture Diagrams
-
-            - Azure Virtual Machines
         """,
         "Learning Goals": """
             - Can document and backup MySQL
@@ -153,43 +153,33 @@ table_data = [
             - Can generate OpenAPI documentation in their favorite(s) frameworks.
 
             - Can do architecture diagrams in their favorite tool.
-
-            - Can create virtual machines without aid on your favorite hosting platform.
         """,
         "Resources and Activities": [
             "[05a [Individual] Create OpenAPI Documentation](00._Course_Material/01._Assignments/05._Documentation/05a._[Individual]_Create_OpenAPI_Documentation.md)", 
             "[Resource: Video on OpenAPI](https://www.youtube.com/watch?v=pRS9LRBgjYg)",
-            "[05a [Pair] Database granular access](00._Course_Material/01._Assignments/05._Documentation/5b._[Pair]_Database_granular_access.md)",          
+            "[05b [Pair] Database granular access](00._Course_Material/01._Assignments/05._Documentation/5b._[Pair]_Database_granular_access.md)",          
     
         ]
     },
     {
-        "Title": "Cloud",
+        "Title": "",
         "Date": "March 14th", 
         "Description": """
-                Azure:
-                - Virtual Machines
-                - Blob Storage
-                - Functions
-
-                Terraform
         """,
         "Learning Goals": """
-            - Can create serverless functions (AWS Lambda, Azure Functions, Vercel etc).
         """,
         "Resources and Activities": [
         ]
     },
     {
-        "Title": "No Lecture",
+        "Title": "",
         "Date": "March 21st", 
         "Description": """
-            Work on the homework. 
         """,
         "Learning Goals": """
         """,
         "Resources and Activities": [
-            "**MANDATORY I DEADLINE**"
+            "[**MANDATORY I DEADLINE**](00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md)",          
         ]
     },
 ]
