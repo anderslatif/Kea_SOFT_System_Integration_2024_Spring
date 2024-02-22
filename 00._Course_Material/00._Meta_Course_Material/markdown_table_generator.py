@@ -105,16 +105,10 @@ table_data = [
             - Understands client polling, short polling, long polling and the pros and cons of each approach.
 
             - Understands SSE and can explain how to implement it. Has an example ready. 
-
-            - Understands the pros and cons of SSE and can compare it to Websockets. 
-
-            - Can recall how we did Github Wehooks without having to be able to do it on the fly. Can illustrate exactly how it works by drawing a diagram.
-
-            - Understands how to approach building a custom webhook system.
         """,
         "Resources and Activities": [
-            "[04a [Individual] SSE example](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04a._[Individual]_SSE_example.md)", 
-            "[04b [Pair] Expose and integrate with a webhook system](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04b._[Pair]_Expose_and_integrate_with_a_webhook_system.md)"
+            "[04a [Individual] SSE example](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04a._[Individual]_SSE_example.md", 
+            "[04b [Pair] Database granular access](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04b._[Pair]_Database_granular_access.md)",          
         ]
     },
     {
@@ -132,6 +126,9 @@ table_data = [
         "Title": "Documentation",
         "Date": "March 7th", 
         "Description": """
+            - Websockets
+
+            - Webhooks 
 
             - Backing up MySQL
 
@@ -144,6 +141,12 @@ table_data = [
             - Architecture Diagrams
         """,
         "Learning Goals": """
+            - Understands the pros and cons of SSE and can compare it to Websockets. 
+
+            - Can recall how we did Github Wehooks without having to be able to do it on the fly. Can illustrate exactly how it works by drawing a diagram.
+
+            - Understands how to approach building a custom webhook system.
+            
             - Can document and backup MySQL
 
             - Has considered how to document the databases they are familiar with.
@@ -156,8 +159,8 @@ table_data = [
         """,
         "Resources and Activities": [
             "[05a [Individual] Create OpenAPI Documentation](00._Course_Material/01._Assignments/05._Documentation/05a._[Individual]_Create_OpenAPI_Documentation.md)", 
+            "[05b [Pair] Expose and integrate with a webhook system](00._Course_Material/01._Assignments/05._Real-time_communication_-_Part_II/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md)"
             "[Resource: Video on OpenAPI](https://www.youtube.com/watch?v=pRS9LRBgjYg)",
-            "[05b [Pair] Database granular access](00._Course_Material/01._Assignments/05._Documentation/5b._[Pair]_Database_granular_access.md)",          
     
         ]
     },
