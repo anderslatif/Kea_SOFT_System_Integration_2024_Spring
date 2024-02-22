@@ -8,13 +8,18 @@
 <body>
     <h1>Short Polling</h1>
 
+    <div id="randomNumbers"></div>
+
     <script>
-        const shortPollingDelayMS = 6000;
+        const randomNumbersDiv = document.getElementById("randomNumbers");
+        const DELAY = 1000;
         const poll = async () => {
-// assignment:  finish this poll function
+            const response = await fetch("/randomNumbers");
+            const result = await response.json();
+            randomNumbersDiv.textContent = result.data.join("  ");
         };
 
-        setInterval(poll, shortPollingDelayMS);
+        setInterval(poll, DELAY);
     </script>
 </body>
 </html>

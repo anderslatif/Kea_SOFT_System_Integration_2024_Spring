@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static("public"));
 
-const randomNumbers = [];
+const randomNumbers = [1, 34, 843];
 
 
 app.get("/randomNumbers", (req, res) => {
