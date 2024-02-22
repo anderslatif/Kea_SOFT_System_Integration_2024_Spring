@@ -107,7 +107,7 @@ table_data = [
             - Understands SSE and can explain how to implement it. Has an example ready. 
         """,
         "Resources and Activities": [
-            "[04a [Individual] SSE example](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04a._[Individual]_SSE_example.md", 
+            "[04a [Individual] SSE example](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04a._[Individual]_SSE_example.md)", 
             "[04b [Pair] Database granular access](00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04b._[Pair]_Database_granular_access.md)",          
         ]
     },
