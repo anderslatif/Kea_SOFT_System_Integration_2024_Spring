@@ -124,7 +124,7 @@ table_data = [
         ]
     },
     {
-        "Title": "Documentation",
+        "Title": "Real-time communication - Part III / Documentation",
         "Date": "March 7th", 
         "Description": """
             - Websockets
