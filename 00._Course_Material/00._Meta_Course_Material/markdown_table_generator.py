@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 table_data = [
     {
@@ -159,7 +160,7 @@ table_data = [
         """,
         "Resources and Activities": [
             "[05a [Individual] Create OpenAPI Documentation](00._Course_Material/01._Assignments/05._Documentation/05a._[Individual]_Create_OpenAPI_Documentation.md)", 
-            "[05b [Pair] Expose and integrate with a webhook system](00._Course_Material/01._Assignments/05._Real-time_communication_-_Part_II/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md)"
+            "[05b [Pair] Expose and integrate with a webhook system](00._Course_Material/01._Assignments//05._Documentation/05b._[Pair]_Expose_and_integrate_with_a_webhook_system.md)"
             "[Resource: Video on OpenAPI](https://www.youtube.com/watch?v=pRS9LRBgjYg)",
     
         ]
@@ -188,7 +189,7 @@ table_data = [
 ]
 
 
-def generate_markdown_table(data):
+def generate_markdown_table(data, readme_file_path):
     headers = data[0].keys()
 
     header_row = "| " + " | ".join(headers) + " |"
@@ -196,10 +197,14 @@ def generate_markdown_table(data):
 
     table_rows = [header_row, separator_row]
 
+    absolute_path = readme_file_path.replace("README.md", "")
+
     for row in data:
         row_values = []
         for key in headers:
             if key == "Resources and Activities":
+                for markdown_link in row[key]:
+                    check_if_filepath_is_valid(absolute_path, markdown_link)
                 resources_str = "<br><br>".join(row[key])
                 row_values.append(resources_str)
             else:
@@ -257,7 +262,26 @@ def find_readme_file(start_dir):
         current_dir = parent_dir
 
 
+def check_if_filepath_is_valid(absolute_path, markdown_link):
+     # Extract relative path from markdown link
+    start = markdown_link.find('(') + 1
+    end = markdown_link.find(')')
+    relative_path = markdown_link[start:end]
+
+    if relative_path.startswith("http"):
+        return
+    
+    full_path = os.path.join(absolute_path, relative_path)
+    
+    is_valid = Path(full_path).exists()
+
+    if not is_valid:
+        # print red text
+        print(f"\033[31m{full_path}\033[0m")
+
+
+
 current_script_path_absolute = os.path.abspath(__file__)
 readme_file_path = find_readme_file(current_script_path_absolute)
-markdown_table = generate_markdown_table(table_data)
+markdown_table = generate_markdown_table(table_data, readme_file_path)
 replace_section_in_file(readme_file_path, 'Semester Plan', "\n\n" + markdown_table)
