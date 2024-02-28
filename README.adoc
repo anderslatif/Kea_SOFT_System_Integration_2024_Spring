@@ -1,0 +1,122 @@
+= System Integration Semester Plan
+
+== About the course
+
+link:00._Course_Material/00._Meta_Course_Material/about_the_course.md[About the course]
+
+link:00._Course_Material/00._Meta_Course_Material/about_the_exam.md[About the exam]
+
+== Semester Plan
+
+[width="100%",options="header"]
+|===
+| Title | Date | Description | Learning Goals | Resources and Activities
+
+| Introduction
+| Feb. 1st
+a|
+* Intro: This course
+* File types and data formats.
+* Everything but REST
+a|
+* Alternatives to REST API.
+* Data formats. TXT, JSON, YAML, CSV, XML
+* Can parse files in these formats after the homework.
+a|
+* link:00._Course_Material/01._Assignments/01._Introduction_Data_Formats/00._<Individual>_Azure_For_Students.md[Do this: <Individual> Azure for Students]
+* link:00._Course_Material/01._Assignments/01._Introduction_Data_Formats/00._<Individual>_Install_Node.js.md[Do this: <Individual> Install Node.js]
+* link:00._Course_Material/01._Assignments/01._Introduction_Data_Formats/01a._<Individual>_Data_Parsing.md[01a <Individual> Data Parsing]
+
+| Data
+| Feb. 8th
+a|
+* Intro: The exam
+* Data encoding
+* Hashing, serializing, marshalling
+* Python modules
+* Environment Setup
+* Packages eco system in Node and Python
+* Servers
+a|
+* Can argue about different build tools for Python and understands their pros and cons.
+* Can use poetry.
+* Understands encoding, serializing and marshalling. Knows about charsets and encoding types.
+a|
+* link:00._Course_Material/01._Assignments/02._Data/00._<Individual>_Data_parsing_server_-_Part_I.md[00 <Individual> Data format translation servers - Part II]
+* link:00._Course_Material/01._Assignments/02._Data/00._<Optional>_Serialize__Marshall_data.md[<Optional> Serialize / Marshall data]
+
+| Server to server / Real-time communication - Part I
+| Feb. 15th
+a|
+* Communication
+* Protocols (TCP / UDP)
+* Making a server act as a client to another server.
+* Environment Variables (OS level, Runtime environment level)
+a|
+* Knows about different communication protocols on a superficial level.
+* Knows how to make a HTTP requests between languages.
+* Understand the different levels of environment variables and how they differ.
+* Knows how to define environment variables in different languages.
+a|
+* link:00._Course_Material/01._Assignments/03._Server_to_server_Real-time_communication_-_Part_I/03a._<Individual>_Data_parsing_server_-_Part_II.md[03a <Individual> Data parsing server - Part II]
+
+| Real-time communication - Part II
+| Feb. 22th
+a|
+* ngrok
+* Date
+* Client polling, short polling, long polling.
+* Server-sent events
+* Webhooks
+a|
+* Can use ngrok
+* Understand how date affects systems and communication between services.
+* Understands challenges and edge cases when working with date and why this is important during integration.
+* Understands client polling, short polling, long polling and the pros and cons of each approach.
+* Understands SSE and can explain how to implement it. Has an example ready.
+a|
+* link:00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04a._<Individual>_SSE_example.md[04a <Individual> SSE example]
+* link:00._Course_Material/01._Assignments/04._Real-time_communication_-_Part_II/04b._<Pair>_Database_granular_access.md[04b <Pair> Database granular access]
+
+| No Lecture
+| February 29th
+| Work on the homework.
+| 
+| 
+
+| Real-time communication - Part II / Documentation
+| March 7th
+a|
+* Websockets
+* Webhooks
+* Backing up MySQL
+* Documenting MySQL
+* OpenAPI
+* Swagger + Express/FastAPI/Spring
+* Architecture Diagrams
+a|
+* Understands the pros and cons of SSE and can compare it to Websockets.
+* Can recall how we did Github Webhooks without having to be able to do it on the fly. Can illustrate exactly how it works by drawing a diagram.
+* Understands how to approach building a custom webhook system.
+* Can document and backup MySQL
+* Has considered how to document the databases they are familiar with.
+* Understands the what and why of OpenAPI
+* Can generate OpenAPI documentation in their favorite(s) frameworks.
+* Can do architecture diagrams in their favorite tool.
+a|
+* link:00._Course_Material/01._Assignments/05._Documentation/05a._<Individual>_Create_OpenAPI_Documentation.md[05a <Individual> Create OpenAPI Documentation]
+* link:00._Course_Material/01._Assignments//05._Documentation/05b._<Pair>_Expose_and_integrate_with_a_webhook_system.md[05b <Pair> Expose and integrate with a webhook system]
+* link:https://www.youtube.com/watch?v=pRS9LRBgjYg[Resource: Video on OpenAPI]
+
+| No Lecture
+| March 14th
+| Work on the homework.
+| 
+| 
+
+| 
+| March 21st
+| 
+| 
+| link:00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md[**MANDATORY I DEADLINE**]
+|===
