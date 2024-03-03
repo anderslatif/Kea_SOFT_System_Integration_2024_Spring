@@ -1,4 +1,6 @@
-# [Individual] SSE Example
+# 04a [Individual] SSE Example
+
+**Type**: Individual
 
 Create an SSE example. 
 
