@@ -89,21 +89,13 @@ link:00._Course_Material/01._Assignments/04._Real-time_communication_Part_II/04b
 | 5. Real-time communication - Part II / Documentation
 | March 7th
 a|
-* Websockets
 * Webhooks
 * Git hooks
-* Backing up MySQL
-* Documenting MySQL
-* Database Migrations
-* Architecture Diagrams
 a|
 * Understands the pros and cons of SSE and can compare it to Websockets.
 * Can recall how we did Github Webhooks without having to be able to do it on the fly. Can illustrate exactly how it works by drawing a diagram.
 * Can create a "Hello World" Git hook. 
 * Understands how to approach building a custom webhook system.
-* Can document and backup MySQL
-* Has considered how to document the databases they are familiar with.
-* Can do architecture diagrams in their favorite tool.
 a|
 link:00._Course_Material/01._Assignments/05._Real-time_communication_Part_III/05a._Expose_and_integrate_with_a_webhook_system.md[05a <Pair> Expose and integrate with a webhook system]
 
@@ -115,18 +107,40 @@ link:https://www.youtube.com/watch?v=pRS9LRBgjYg[Resource: Video on OpenAPI]
 | 
 | 
 
-| 6. Documentation
+| 6. Documentation - Part I
 | March 21st
-a| 
-* OpenAPI
 a|
-* Can generate OpenAPI documentation in their favorite(s) frameworks.
+* Websockets
+* Backing up MySQL
+* Documenting MySQL
+* Database Migrations
+* Architecture Diagrams
+a|
+* Can document and backup MySQL
+* Has considered how to document the databases they are familiar with.
+* Can do architecture diagrams in their favorite tool.
 a| 
-link:00._Course_Material/01._Assignments/06._Documentation/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
+link:00._Course_Material/01._Assignments/06._Documentation_Part_I/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
 
-link:00._Course_Material/01._Assignments/06._Documentation/06a._Create_OpenAPI_Documentation.md[06a <Individual> Create OpenAPI Documentation]
-
-link:00._Course_Material/01._Assignments/06._Documentation/06b._Generate_Code_Documentation_For_DLS.md[06b <DLS Group> Create Code Documentation for DLS]
+link:00._Course_Material/01._Assignments/06._Documentation_Part_I/06a._Generate_Code_Documentation_For_DLS.md[06b <DLS Group> Create Code Documentation for DLS]
 
 link:00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md[**MANDATORY I DEADLINE**]
+
+| Holiday
+| 
+| 
+| 
+| 
+
+
+| 7. Documentation - Part II
+| April 4th
+a|
+* OpenAPI
+* API Monitors
+a|
+* Can generate OpenAPI documentation in their favorite(s) frameworks.
+a|
+link:00._Course_Material/01._Assignments/07._Documentation_Part_II/07a._Create_OpenAPI_Documentation.md[07a <Individual> Create OpenAPI Documentation]
+
 |===
