@@ -1,0 +1,569 @@
+<div class="title-card">
+    <h1>Cloud</h1>
+</div>
+
+
+---
+
+# Cloud Providers
+
+<div>
+    <img src="./assets/top_cloud_providers.png" alt="Top Cloud Providers" style="height: 40vh;"/>
+</div>
+
+
+---
+
+# Deployment models
+
+- Public
+
+- Private (on-premise)
+
+- Hybrid
+
+---
+
+# Cloud service model
+
+<div>
+    <img src="./assets/cloud_services_model.png" alt="Cloud service model" style="height: 40vh;"/>
+</div>
+
+
+Source: imelgrat.me
+
+---
+
+# Cloud Service Model - Part I
+
+- **SaaS (Software as a Service)**
+    - Delivers applications over the internet.
+    - Users access software from web browsers.
+    - Examples: Google Workspace, Salesforce.
+
+- **FaaS (Function as a Service)**
+    - Enables running code in response to events.
+    - Serverless execution; no need to manage servers.
+    - Examples: AWS Lambda, Azure Functions.
+
+
+---
+
+# Cloud Service Model - Part II
+
+- **DaaS (Desktop as a Service)**
+    - Provides virtual desktop environments.
+    - Hosted and managed by a third party.
+    - Examples: Amazon WorkSpaces, VMware Horizon Cloud.
+
+- **PaaS (Platform as a Service)**
+    - Offers hardware and software tools over the internet.
+    - Typically used for applications development.
+    - Examples: Google App Engine, Heroku.
+
+---
+    
+# Cloud Service Model - Part III
+
+- **STaaS (Storage as a Service)**
+    - Provides data storage as a service.
+    - Accessible through a network (commonly the internet).
+    - Examples: Google Cloud Storage, Dropbox.
+
+- **IaaS (Infrastructure as a Service)**
+    - Offers fundamental computing resources.
+    - Includes virtual machines, storage, and networks.
+    - Examples: Amazon EC2, Microsoft Azure.
+
+---
+
+# From now on the focus is Azure
+
+---
+
+# Azure data centers
+
+<div>
+    <img src="./assets/azure_data_centers.png" alt="Azure data centers" style="height: 50vh;"/>
+</div>
+
+
+---
+
+# Cost management - Resource Groups I
+
+
+Please beware that even if no services are running, if a resource group exists it can still use a lot of money. Delete resource groups when not in use. 
+
+Exception: Network Watcher:
+
+https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview
+
+---
+
+# Cost management - II
+
+Recommendation: When possible use free services. 
+
+<div>
+    <img src="./assets/azure_free_services.png" alt="Azure free services" style="height: 30vh;"/>
+</div>
+
+---
+
+# Cost management - III
+
+Setup limitations on Pay-As-You-Go accounts (excludes Azure for students):
+
+[Click to see the tutorial.](./azure_cost_managment/azure_cost_managment.md)
+
+The above link will also explain where to check your budget in general. 
+
+---
+
+
+
+<div class="title-card">
+    <h1>Virtual Machines</h1>
+</div>
+
+---
+
+# Virtual machines 
+
+Virtual machine is the generic term for servers in the cloud.
+
+In AWS they are called **EC2**. In Azure, **Azure Virtual Machines**.
+
+Let's manually create a virtual machine (through Azure Free Services). 
+
+But first, let's generate an SSH key locally which we will use to login.
+
+---
+
+# Generating a SSH-key
+
+Generate a 4096-bit RSA SSH-key pair. 
+
+*nix (tldr ssh-keygen):
+
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "comment|email”
+```
+
+Windows (2048-bit RSA key is the default): 
+
+```powershell
+$ ssh-keygen -m PEM -t rsa -b 4096
+```
+
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed
+
+---
+
+# Let's create a virtual machine
+
+Various OS to choose from. We will use the latest version of Ubuntu.
+
+Allow port 22 so we can ssh into it. 
+
+<div>
+    <img src="./assets/allow_port_22.png" alt="Port 22 ssh inbound rule allow"/>
+</div>
+
+---
+
+# SSH into the virtual machine
+
+In case of permission issues:
+
+```bash
+$ chmod 600 /path/to/your/file.pem
+```
+
+---
+
+# The `apt` package manager
+
+Since we setup an Ubuntu server we can use the default package manager for Debian. 
+
+Ubuntu is a flavor within the broader Debian ecosystem.
+
+If a package exists in the default repository we can run:
+
+```bash
+$ sudo apt install <package_name>
+```
+
+---
+
+#  Let's install Node.js via `nvm` - I
+
+Node.js is only included in personal package archives (PPA) and not the public one so we need to install it in a roundabout way.
+
+There are several ways to install Node.js. One is through Node Version Manager (nvm).
+
+Download and install:
+
+```bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+Running `source` on the terminal settings file will reload the terminal with the new configurations:
+
+```bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+---
+#  Let's install Node.js via `nvm` - II
+
+Test that we have installed `nvm`:
+
+```bash
+$ nvm --version
+```
+
+Install the latest version:
+
+```bash
+$ nvm install node
+```
+
+nvm makes installing specific versions of node nad switching between them quick.
+
+This is useful if a project requries a specific version of Node.js.
+
+---
+
+# Debugging step: Upgrade the Ubuntu server
+
+If you get the following error the default Azure ubuntu version is outdated:
+
+```
+node: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.28' not found (required by node)
+```
+
+Solution: Upgrade the server:
+
+```bash
+$ sudo do-release-upgrade
+```
+
+Alternative way:
+
+```bash
+$ sudo apt update
+$ sudo apt full-upgrade
+```
+
+---
+
+# Confirm the installation:
+
+Success if both commands output a version number:
+
+```bash
+$ node -v
+$ npm -v
+```
+
+---
+
+# Network management: Ports I
+
+There are two type of rules:
+
+1. Inbound: Traffic going **TO** the VM.
+
+2. Outbund: Traffic going **OUT** the VM. 
+
+Define an inbound rule to whitelist the port that the application is running on so we can access it from the internet.
+
+---
+ 
+# Network management: Ports II
+
+<img src="./assets/vm_network_port.png" alt="network vm port">
+
+
+---
+
+
+# Let's tear it down!
+
+Delete it and **REMEMBER** to also delete the resource group!
+
+Repetition: In Azure, a resource group will still cost money, even if there is no service associated with. 
+
+---
+
+# VPC / VNET
+
+VPC: Virtual Private Cloud (often associated with AWS)
+VNET: Virtual Network (Azure's term)
+I will use the generic term VPC in class.
+
+A VPC is an isolated cloud network within a public cloud environment.
+Allows cloud services in the same data center to communicate securely without going through the public internet. 
+Provides control over IP address ranges, subnets, network gateways, and security settings.
+
+---
+
+# VPC security (NACL)
+
+NACL (Network Access Control Layer):
+
+- NACL
+
+- SG (Security Groups)
+
+- Firewall
+
+---
+
+# Subnets
+
+Private subnets
+
+Public subnets
+
+---
+
+# Gateways
+
+IG (internet gateway)
+
+VPC Peering (connect multiple VPCs)
+
+NAT (allows devices in the VPC to connect to the internet)
+
+---
+
+# Application Layer
+
+NLB (Network Load Balancer)
+
+ALB (Application Load Balancer)
+
+---
+
+# Example of a pro setup
+
+<img src="./assets/example_vpc_vnet_setup.png" alt="VPC VNET example setup">
+
+---
+
+# Virtual Machines
+
+[Tutorial]: How to deploy and open up ports:
+
+[![How to deploy](http://img.youtube.com/vi/w8H5fWBHddA/0.jpg)](https://www.youtube.com/watch?v=w8H5fWBHddA)
+
+
+---
+
+# Cloud storage
+
+AWS: S3 (Simple Storage Service)
+
+<img src="./assets/aws_s3_logo.png" alt="AWS S3" width="200" height="100">
+
+Azure: Azure Blob Storage
+
+<img src="./assets/azure_blob_storage_logo.png" alt="AWS S3" width="200" height="100">
+
+---
+
+# Azure Blob Storage - I
+
+Use the one under Free Services. 
+
+<img src="./assets/azure_blob_storage_free_service.png" alt="Azure blob storage free service" width="200" height="100">
+
+A Blob Storage can contain multiple contains. Try to upload a file but create a container first. 
+
+Anonymous access level (No other access level is allowed on Azure For Students):
+
+* Private (no anonymous access)
+
+---
+
+# Azure Blob Storage - II
+
+Access not permitted when trying to open the file:
+
+<img src="./assets/azure_blob_storage_access_not_permitted.png" alt="Azure blob storage access not permitted" width="200" height="100">
+
+Here are the thing that can be done: 
+
+1. Enable Anonymous Public Read Access 
+
+2. Using Azure AD (Active Directory)
+
+3. Generate a Shared Access Signature (SAS) URL
+
+---
+
+# Shared Access Signature (SAS)
+
+There is a subfolder in this folder titled `generating_sas_token_azureblobstorage` in it you will find a code example in Node.js for how to generate a SAS token. 
+
+Read the README.md to see how. The instructions assume that `az` has been installed. 
+
+
+---
+
+# AWS S3 policies
+
+Policy Generator: 
+
+https://awspolicygen.s3.amazonaws.com/policygen.html
+
+---
+
+# Serverless computing
+
+<img src="./assets/aws_lambda_vs._azure_functions.png" alt="AWS Lambda vs. Azure Functions" style="height: 30vh">
+
+
+---
+
+# Why serverless?
+
+Saves time. Easier to deploy.
+
+Scalable. 
+
+Saves money. (Azure Functions Different pricing plans.)
+
+
+---
+
+# Azure Functions - subscription models
+
+* **Consumption plan**: Pay for the time that your code runs.
+
+* **Premium plan**: You specify a number of pre-warmed instances that are always online. 
+
+* **App service plan**: Run as if they are web apps. Not serverless.
+
+---
+
+# Azure Functions - Ways to deploy
+
+* In the browser.
+
+* Terminal. 
+
+* Visual Studio (extension).
+
+* VSCode.
+
+---
+
+# Tools for local development
+
+Tools: 
+
+- CLI
+- Visual Studio
+- VS Code (extension)
+- Storage emulators (local)
+
+---
+
+# Cold starts - A problem
+
+Cold start: The time it takes to allocate the function to a server and setup the runtime environment before your code can run.
+
+Functions are held warm for roughly 20 minutes according to below source.
+
+
+<img src="./assets/cold_start.png" alt="Cold start" style="height: 30vh">
+
+
+
+(Source: https://azure.microsoft.com/en-us/blog/understanding-serverless-cold-start/)
+
+---
+
+# More cold start metrics
+
+<img src="./assets/cold_start_per_language.png" alt="Cold start per language" style="height: 30vh">
+
+
+(Source: https://mikhail.io/serverless/coldstarts/azure/)
+
+---
+
+# Triggers and bindings
+
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=isolated-process%2Cpython-v2&pivots=programming-language-csharp#supported-bindings
+
+---
+
+# Let's create an Azure function in the portal
+
+Must create a Function App. A Function App can contain multiple functions. 
+Must associate storage with a Function App.
+
+To call with name key defined in the query string:
+Set the authentication level to anonymous either in integration or function.json.
+Use the Function key [default] URL. 
+
+---
+
+# Azure Key Vault
+
+A way to store values outside of the code such as environment variables. 
+
+Can be used to authenticate services. 
+Also useful for authorization. Access policies can limit usage.
+
+Example use case:
+Define the database connection string here. Functions can then get the connection string from the Key Vault. Now it’s removed from the code and can be changed in one place.
+
+
+---
+
+# Let's create a Key Vault
+
+<!-- todo  -->
+
+---
+
+# Azure Service Bus
+
+---
+
+# Azure Service Bus - Queues
+
+https://www.youtube.com/watch?v=ZV4gjVVhee0
+
+![Azure Service Bus - Queues](./assets/azure_service_bus_queue.png)
+
+---
+
+# Azure Service Bus - Topics
+
+https://www.youtube.com/watch?v=kfjUSibSico
+
+![Azure Service Bus - Topics](./assets/azure_service_bus_topic.png)
+
+---
+
+# Ways to work with cloud services
+
+From okay to best:
+
+1. Console UI (Clicking)
+
+2. CLI / API (Shell, Bash)
+
+3. SDK/CDK (Software/Cloud Development Clip) (Custom code scripts in programming languages)
+
+4. IaC (Framework for provisioning of resources, Declarative, Prescriptive)
+
+

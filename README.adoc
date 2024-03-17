@@ -107,8 +107,28 @@ link:https://www.youtube.com/watch?v=pRS9LRBgjYg[Resource: Video on OpenAPI]
 | 
 | 
 
-| 6. Documentation - Part I
+| 6. 
+link:00._Course_Material/02._Slides/Cloud/Cloud.md[Cloud]
+link:00._Course_Material/02._Slides/IaC/IaC.md[IaC]
 | March 21st
+a|
+* Virtual Machines
+* Azure Blob Storage
+* Infrastructure as Code
+* Terraform
+a|
+a| 
+
+
+| Holiday
+| 
+| 
+| 
+| 
+
+
+| 6. Documentation - Part I
+| April 4th
 a|
 * Websockets
 * Backing up MySQL
@@ -126,15 +146,9 @@ link:00._Course_Material/01._Assignments/06._Documentation_Part_I/06a._Generate_
 
 link:00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md[**MANDATORY I DEADLINE**]
 
-| Holiday
-| 
-| 
-| 
-| 
-
 
 | 7. Documentation - Part II
-| April 4th
+| April 11th
 a|
 * OpenAPI
 * API Monitors
