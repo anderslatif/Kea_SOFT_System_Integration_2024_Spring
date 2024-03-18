@@ -118,6 +118,8 @@ a|
 * Terraform
 a|
 a| 
+* link:00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md[**MANDATORY I DEADLINE**]
+
 
 
 | Holiday
@@ -144,7 +146,6 @@ link:00._Course_Material/01._Assignments/06._Documentation_Part_I/00._Service_Le
 
 link:00._Course_Material/01._Assignments/06._Documentation_Part_I/06a._Generate_Code_Documentation_For_DLS.md[06b <DLS Group> Create Code Documentation for DLS]
 
-link:00._Course_Material/01._Assignments/00._Mandatories/01._Mandatory_I.md[**MANDATORY I DEADLINE**]
 
 
 | 7. Documentation - Part II
