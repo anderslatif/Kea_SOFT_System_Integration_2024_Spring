@@ -213,7 +213,7 @@ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bas
 Running `source` on the terminal settings file will reload the terminal with the new configurations:
 
 ```bash
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+$ source ~/.bashrc
 ```
 
 ---
@@ -290,6 +290,28 @@ Define an inbound rule to whitelist the port that the application is running on 
 
 ---
 
+# Create a static IP address
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/virtual-networks-static-private-ip-arm-pportal
+
+---
+
+# Suggestion: Install a MySQL database on the VM
+
+The Database as a Service are always costly and highly capable. 
+
+Instead, you could install a small MySQL instance in the VM. 
+
+**Pro**: The server application will have access to the database througg port `3306` and only the server port needs to be exposed. 
+
+**Con**: Problem for scaling (decoupling the services), now both the server and the database are competing for ressources. 
+
+Here is a tutorial:
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-quickstart
+
+
+---
 
 # Let's tear it down!
 
@@ -430,6 +452,16 @@ https://awspolicygen.s3.amazonaws.com/policygen.html
 
 ---
 
+# Azure Functions - subscription models
+
+* **Consumption plan**: Pay for the time that your code runs. This is **serverless**. 
+
+* **Premium plan**: You specify a number of pre-warmed instances that are always online. 
+
+* **App service plan**: Run as if they are web apps. Not serverless.
+
+---
+
 # Why serverless?
 
 Saves time. Easier to deploy.
@@ -439,15 +471,6 @@ Scalable.
 Saves money. (Azure Functions Different pricing plans.)
 
 
----
-
-# Azure Functions - subscription models
-
-* **Consumption plan**: Pay for the time that your code runs.
-
-* **Premium plan**: You specify a number of pre-warmed instances that are always online. 
-
-* **App service plan**: Run as if they are web apps. Not serverless.
 
 ---
 
@@ -457,9 +480,9 @@ Saves money. (Azure Functions Different pricing plans.)
 
 * Terminal. 
 
-* Visual Studio (extension).
+* IDE (extensions).
 
-* VSCode.
+* IaC tools. 
 
 ---
 
@@ -468,8 +491,11 @@ Saves money. (Azure Functions Different pricing plans.)
 Tools: 
 
 - CLI
+
 - Visual Studio
+
 - VS Code (extension)
+
 - Storage emulators (local)
 
 ---

@@ -681,7 +681,9 @@ You should not push the state file into git because it risks:
 
 # The state file - The glaring problem
 
-The state file must be up to date when running `terraform apply`, otherwise "configuration drift" will lead to big problems. 
+The state file must be up to date when running `terraform apply`, otherwise "state drift" will lead to big problems. 
+
+If a change happens outside of Terraform then state drift can be ammened with `terraform refresh`.
 
 A **major** downside with Terraform is how there ufortunately is no standardized way to deal with state file. 
 
