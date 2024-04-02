@@ -248,7 +248,7 @@ resource "aws_instance" "example" {
 
 We just write what we want. 
 
-Continues where it left off even despite potential failues in the middle of the process.
+Continues where it left off even despite potential failures in the middle of the process.
 
 ---
 
@@ -262,11 +262,8 @@ Terraform can be defined as either HCL or JSON. But HCL is commonly used because
 Generally about HCL, it is:
 
 * A domain-specific langauge designed for IaC.
-
 * Declarative: Focused on the desired end state
-
 * Non-Imperative: Specifies 'what' is needed, not 'how' to accomplish it.
-
 * Idempotent: Applying the same configuration multiple times results in the same state, without unintended side effects.
 
 ---
@@ -788,7 +785,7 @@ Can you think of use cases where one might prefer to use Configuration Managemen
 
 ---
 
-# Top 5 Configuration Manamgemnt Tools - I
+# Top 5 Configuration Management Tools - I
 
 <table>
   <tr>
@@ -807,7 +804,7 @@ Ordered by most popular first
 
 ---
 
-# Reflect on Configuration Manamgemnt Tools 
+# Reflect on Configuration Management Tools 
 
 I've only worked with Ansible, personally. 
 
