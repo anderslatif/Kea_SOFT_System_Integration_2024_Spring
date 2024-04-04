@@ -18,7 +18,15 @@
         fetch("http://localhost:8080/timestamp")
         .then((response) => response.json())
         .then((result) => {
-            console.log(result);
+            const timestampExpressParagraph = document.getElementById("timestamp-express");
+            timestampExpressParagraph.textContent = result.time;
+        });
+
+        fetch("http://localhost:8000/timestamp")
+        .then((response) => response.json())
+        .then((result) => {
+            const timestampExpressParagraph = document.getElementById("timestamp-fastapi");
+            timestampExpressParagraph.textContent = result.time;
         });
     </script>
 </body>
