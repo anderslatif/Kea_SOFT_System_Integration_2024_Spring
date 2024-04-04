@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+</head>
+<body>
+    <h3>Send Greeting</h3>
+    <button onclick="sendGreeting()">Say Hello</button>
+    
+    <script>
+        const ws = new WebSocket("ws://localhost:8080");
+
+        ws.onopen = () => {
+            console.log("Connected to the server");
+        };
+
+        ws.onmessage = (event) => {
+            console.log("Message from the server:", event.data);
+        };
+
+        ws.onerror = (error) => {
+            console.log("Something went wrong", error);
+        };
+
+        function sendGreeting() {
+            ws.send("Hello!");
+        }
+    </script>
+</body>
+</html>
