@@ -135,9 +135,8 @@ a|
 * Websockets
 * link:00._Course_Material/02._Slides/infographics/CORS.md[CORS]
 * Media
-* Multi-part form data
+* HTML Forms
 a|
-* Knows how to send multi-part forms over HTML and how to set it up in at least one server language.
 * Can explain how the web sockets works. 
 * Understand WebRTC on a surface level. 
 * Can make comparisons between web sockets and WebRTC.
@@ -153,6 +152,7 @@ a|
 * Multi-part Forms
 * MPEG-DASH
 a|
+* Knows how to send multi-part forms over HTML and how to set it up in at least one server language.
 * Can think of use cases for how to store media files.
 * Can think of use cases for how to stream media files.
 a|
