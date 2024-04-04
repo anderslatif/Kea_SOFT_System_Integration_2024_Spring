@@ -137,6 +137,7 @@ a|
 * Media
 * Multi-part form data
 a|
+* Knows how to send multi-part forms over HTML and how to set it up in at least one server language.
 * Can explain how the web sockets works. 
 * Understand WebRTC on a surface level. 
 * Can make comparisons between web sockets and WebRTC.
@@ -146,7 +147,7 @@ link:00._Course_Material/01._Assignments/06._Real-time_communication_Part_IV/06a
 
 
 
-| 8. Media
+| 7. Media
 | April 11th
 a|
 * Multi-part Forms
