@@ -69,7 +69,7 @@ a|
 * Date
 * Client polling, short polling, long polling.
 * Server-sent events
-* Webhooks
+* link:00._Course_Material/02._Slides/infographics/Webhooks.md[Webhooks]
 a|
 * Understand how date affects systems and communication between services.
 * Understands challenges and edge cases when working with date and why this is important during integration.
@@ -129,33 +129,64 @@ a|
 | 
 
 
-| 6. Documentation - Part I
+| 6. Real-time communication
 | April 4th
 a|
 * Websockets
+* link:00._Course_Material/02._Slides/infographics/CORS.md[CORS]
+* Media
+* Multi-part form data
+a|
+* Can explain how the web sockets works. 
+* Understand WebRTC on a surface level. 
+* Can make comparisons between web sockets and WebRTC.
+* Understands why CORS exists and how to solve issues. 
+a|
+link:00._Course_Material/01._Assignments/06._Real-time_communication_Part_IV/06a._WebSocket_Example.md[06a Websocket Example]
+
+
+
+| 8. Media
+| April 11th
+a|
+* Multi-part Forms
+* MPEG-DASH
+a|
+* Can think of use cases for how to store media files.
+* Can think of use cases for how to stream media files.
+a|
+
+
+
+| 8. Database Integration
+| April 18th
+a|
 * Backing up MySQL
 * Documenting MySQL
 * Database Migrations
-* Architecture Diagrams
 a|
 * Can document and backup MySQL
 * Has considered how to document the databases they are familiar with.
 * Can do architecture diagrams in their favorite tool.
-a| 
-link:00._Course_Material/01._Assignments/06._Documentation_Part_I/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
+a|
+link:00._Course_Material/01._Assignments/08._Database_Integration/08a._Document_A_Database.md[08a Document A Database]
 
-link:00._Course_Material/01._Assignments/06._Documentation_Part_I/06a._Generate_Code_Documentation_For_DLS.md[06b <DLS Group> Create Code Documentation for DLS]
+link:00._Course_Material/01._Assignments/08._Database_Integration/08b._Migrate_From_One_Database_To_Another.md[08b. Migrate From One Database To Another]
 
 
-
-| 7. Documentation - Part II
-| April 11th
+| 9. Documentation
+| April 25th
 a|
 * OpenAPI
 * API Monitors
 a|
 * Can generate OpenAPI documentation in their favorite(s) frameworks.
 a|
-link:00._Course_Material/01._Assignments/07._Documentation_Part_II/07a._Create_OpenAPI_Documentation.md[07a <Individual> Create OpenAPI Documentation]
+link:00._Course_Material/01._Assignments/09._Documentation/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
+
+link:00._Course_Material/01._Assignments/09._Documentation/09a._Generate_Code_Documentation_For_DLS.md[09b <DLS Group> Create Code Documentation for DLS]
+
+link:00._Course_Material/01._Assignments/09._Documentation/09b._Create_OpenAPI_Documentation.md[09b <Individual> Create OpenAPI Documentation]
+
 
 |===
