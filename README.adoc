@@ -150,6 +150,7 @@ link:00._Course_Material/01._Assignments/06._Real-time_communication_Part_IV/06a
 | April 11th
 a|
 * Multi-part Forms
+* Sound
 * MPEG-DASH
 a|
 * Knows how to send multi-part forms over HTML and how to set it up in at least one server language.
@@ -168,11 +169,10 @@ a|
 a|
 * Can document and backup MySQL
 * Has considered how to document the databases they are familiar with.
-* Can do architecture diagrams in their favorite tool.
 a|
 link:00._Course_Material/01._Assignments/08._Database_Integration/08a._Document_A_Database.md[08a Document A Database]
 
-link:00._Course_Material/01._Assignments/08._Database_Integration/08b._Migrate_From_One_Database_To_Another.md[08b. Migrate From One Database To Another]
+link:00._Course_Material/01._Assignments/08._Database_Integration/08b._Migrate_From_One_Database_To_Another.md[08b Migrate From One Database To Another]
 
 
 | 9. Documentation

@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Form
+from fastapi import FastAPI, Form, File
 
 
 app = FastAPI()
@@ -9,4 +9,12 @@ def basic_form(username: str = Form(...), password: str = Form(default=..., min_
     print(username, password)
     return { "username": username }
 
+
+
+@app.post("/fileform")
+def file_form(file: bytes = File(...)):
+    with open('file', 'wb') as f:
+        f.write(file)
+
+    return { "message": "File Uploaded" }
 
