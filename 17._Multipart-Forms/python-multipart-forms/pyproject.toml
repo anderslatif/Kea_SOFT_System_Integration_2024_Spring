@@ -10,6 +10,7 @@ python = "^3.12"
 fastapi = "^0.110.1"
 uvicorn = "^0.29.0"
 python-multipart = "^0.0.9"
+aiofiles = "^23.2.1"
 
 
 [build-system]
