@@ -1,0 +1,526 @@
+{
+    "schema": [
+        {
+            "table": "customers",
+            "columns": [
+                {
+                    "field": "customerNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "customerName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "contactLastName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "contactFirstName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "phone",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "addressLine1",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "addressLine2",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "city",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "state",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "postalCode",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "country",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "salesRepEmployeeNumber",
+                    "type": "int",
+                    "null": "YES",
+                    "key": "MUL",
+                    "typeJS": "Number",
+                    "keyTo": [
+                        "employees.employeeNumber"
+                    ]
+                },
+                {
+                    "field": "creditLimit",
+                    "type": "decimal(8,2)",
+                    "null": "YES",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "employees",
+            "columns": [
+                {
+                    "field": "employeeNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "lastName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "firstName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "extension",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "email",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "officeCode",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "key": "MUL",
+                    "typeJS": "String",
+                    "keyTo": [
+                        "offices.officeCode"
+                    ]
+                },
+                {
+                    "field": "reportsTo",
+                    "type": "int",
+                    "null": "YES",
+                    "key": "MUL",
+                    "typeJS": "Number",
+                    "keyTo": [
+                        "employees.employeeNumber"
+                    ]
+                },
+                {
+                    "field": "jobTitle",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "knex_migrations",
+            "columns": [
+                {
+                    "field": "id",
+                    "type": "int unsigned",
+                    "null": "NO",
+                    "key": "PRI",
+                    "extra": "auto_increment",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "name",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "batch",
+                    "type": "int",
+                    "null": "YES",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "migration_time",
+                    "type": "timestamp",
+                    "null": "YES",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "knex_migrations_lock",
+            "columns": [
+                {
+                    "field": "index",
+                    "type": "int unsigned",
+                    "null": "NO",
+                    "key": "PRI",
+                    "extra": "auto_increment",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "is_locked",
+                    "type": "int",
+                    "null": "YES",
+                    "typeJS": "Number"
+                }
+            ]
+        },
+        {
+            "table": "offices",
+            "columns": [
+                {
+                    "field": "officeCode",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "city",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "phone",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "addressLine1",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "addressLine2",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "state",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "country",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "postalCode",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "territory",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "orderdetails",
+            "columns": [
+                {
+                    "field": "orderNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "productCode",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "quantityOrdered",
+                    "type": "int",
+                    "null": "NO",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "priceEach",
+                    "type": "decimal(8,2)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "orderLineNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "typeJS": "Number"
+                }
+            ]
+        },
+        {
+            "table": "orders",
+            "columns": [
+                {
+                    "field": "orderNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "orderDate",
+                    "type": "date",
+                    "null": "NO",
+                    "typeJS": "Date"
+                },
+                {
+                    "field": "requiredDate",
+                    "type": "date",
+                    "null": "NO",
+                    "typeJS": "Date"
+                },
+                {
+                    "field": "shippedDate",
+                    "type": "date",
+                    "null": "YES",
+                    "typeJS": "Date"
+                },
+                {
+                    "field": "status",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "comments",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "customerNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "MUL",
+                    "typeJS": "Number",
+                    "keyTo": [
+                        "customers.customerNumber"
+                    ]
+                }
+            ]
+        },
+        {
+            "table": "payments",
+            "columns": [
+                {
+                    "field": "customerNumber",
+                    "type": "int",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "checkNumber",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "paymentDate",
+                    "type": "date",
+                    "null": "NO",
+                    "typeJS": "Date"
+                },
+                {
+                    "field": "amount",
+                    "type": "decimal(8,2)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "productlines",
+            "columns": [
+                {
+                    "field": "productLine",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "textDescription",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "htmlDescription",
+                    "type": "varchar(255)",
+                    "null": "YES",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "image",
+                    "type": "blob",
+                    "null": "YES",
+                    "typeJS": "Buffer"
+                }
+            ]
+        },
+        {
+            "table": "products",
+            "columns": [
+                {
+                    "field": "productCode",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "key": "PRI",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "productName",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "productLine",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "key": "MUL",
+                    "typeJS": "String",
+                    "keyTo": [
+                        "productlines.productLine"
+                    ]
+                },
+                {
+                    "field": "productScale",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "productVendor",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "productDescription",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "quantityInStock",
+                    "type": "int",
+                    "null": "NO",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "buyPrice",
+                    "type": "decimal(8,2)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "MSRP",
+                    "type": "decimal(8,2)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "products2",
+            "columns": [
+                {
+                    "field": "id",
+                    "type": "int unsigned",
+                    "null": "NO",
+                    "key": "PRI",
+                    "extra": "auto_increment",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "price",
+                    "type": "decimal(8,2)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "name",
+                    "type": "varchar(1000)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        },
+        {
+            "table": "users2",
+            "columns": [
+                {
+                    "field": "id",
+                    "type": "int unsigned",
+                    "null": "NO",
+                    "key": "PRI",
+                    "extra": "auto_increment",
+                    "typeJS": "Number"
+                },
+                {
+                    "field": "first_name",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                },
+                {
+                    "field": "last_name",
+                    "type": "varchar(255)",
+                    "null": "NO",
+                    "typeJS": "String"
+                }
+            ]
+        }
+    ]
+}

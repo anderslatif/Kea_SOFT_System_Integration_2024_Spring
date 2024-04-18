@@ -1,0 +1,17 @@
+{
+  "name": "22._database_documentation",
+  "version": "1.0.0",
+  "description": "Always be weary of free tools that require you to enter your database credentials. It is not recommended to use these tools with production databases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^3.1.0",
+    "mysql2": "^3.9.6",
+    "objection": "^3.1.4"
+  }
+}
