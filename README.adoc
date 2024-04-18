@@ -168,9 +168,12 @@ a|
 * Backing up MySQL
 * Documenting MySQL
 * Database Migrations
+* Redis (Fundamentals)
 a|
 * Can document and backup MySQL
 * Has considered how to document the databases they are familiar with.
+* Can list several of the things that Redis can be used for.  
+* Can do basic operations in Redis in the CLI with help. 
 a|
 link:00._Course_Material/01._Assignments/08._Database_Integration/08a._Document_A_Database.md[08a Document A Database]
 
@@ -197,7 +200,6 @@ link:00._Course_Material/01._Assignments/09._Documentation/09b._Create_OpenAPI_D
 | May 2nd
 a|
 * Event-driven architecture
-* Redis (Basics)
 * RedisLabs
 * GraphQL
 * Apollo 
@@ -205,15 +207,13 @@ a|
 a|
 * Understand event-driven architecture and what it aims to solve.
 * Can think of cases where event-driven architecture is useful.
-* Can list several of the things that Redis can be used for.  
-* Can do basic operations in Redis in the CLI. 
 * Understands what Pub/sub and Streams are and can contrast and compare. 
 * Can compare Redis with RabitMQ and Kafka. 
 * Understands the problem that GraphQL solves.
 a|
 link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10a._SMS_Integration.md[10a SMS Integration]
 
-link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10a._Email_Integration.md[10a Email Integration]
+link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10b._Email_Integration.md[10a Email Integration]
 
 // todo graphQL assignment
 
