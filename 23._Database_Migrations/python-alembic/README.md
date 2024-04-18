@@ -82,6 +82,6 @@ def upgrade():
         {'id': 2, 'name': 'Ed Williams', 'description': 'CTO'},
         {'id': 3, 'name': 'Wendy Jones', 'description': 'CFO'},
     ]
-    )
+)
 ```
 
