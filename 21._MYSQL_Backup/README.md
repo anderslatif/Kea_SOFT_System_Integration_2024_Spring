@@ -25,6 +25,12 @@ Read it into the database:
 $ mysql -u username -p < <file_name.sql>
 ```
 
+In Powershell `<` is a a reserved operators so read the content and then pipe it like this:
+
+```powershell
+$ Get-Content <file_name.sql> | mysql -u username -p
+```
+
 Alternatively, you can also do this from the MySQL prompt:
 
 ```bash
