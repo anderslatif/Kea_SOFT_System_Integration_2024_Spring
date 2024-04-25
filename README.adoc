@@ -201,8 +201,9 @@ a|
 a|
 link:00._Course_Material/01._Assignments/09._Documentation_Event-driven_architecture/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
 
-link:00._Course_Material/01._Assignments/09._Documentation_Event-driven_architecture/09a._Generate_Code_Documentation_For_DLS.md[09b <DLS Group> Create Code Documentation for DLS]
+link:00._Course_Material/01._Assignments/09._Documentation_Event-driven_architecture/09a._Generate_Code_Documentation_For_DLS.md[09a <DLS Group> Create Code Documentation for DLS]
 
+link:https://www.youtube.com/watch?v=UNUz1-msbOM[Kafka Video]
 
 link:https://www.gentlydownthe.stream/[Gently Down the Stream]
 
