@@ -182,13 +182,22 @@ link:00._Course_Material/01._Assignments/08._Database_Integration/08b._Migrate_F
 link:00._Course_Material/01._Assignments/08._Database_Integration/08c._Auth_Integration.md[08c Auth Integration]
 
 
-| 9. Documentation
+| 9. Documentation / Event-driven architecture
 | April 25th
 a|
-* OpenAPI
-* API Monitors
+* link:00._Course_Material/02._Slides/OpenAPI/01._OpenAPI.md[OpenAPI Slides]
+* Redis is Node.js and Python
+* Redis (Advanced)
+* Redis Pub/sub
+* Redis Streams
+* Event-driven architecture
 a|
 * Can generate OpenAPI documentation in their favorite(s) frameworks.
+* Understand event-driven architecture and what it aims to solve.
+* Can think of cases where event-driven architecture is useful.
+* Understands what Pub/sub and Streams are and can contrast and compare. 
+* Can compare Redis with RabitMQ and Kafka. 
+* Understands the problem that GraphQL solves.
 a|
 link:00._Course_Material/01._Assignments/09._Documentation/00._Service_Level_Agreements.md[00 <DLS Group> Service Level Agreements]
 
@@ -196,52 +205,28 @@ link:00._Course_Material/01._Assignments/09._Documentation/09a._Generate_Code_Do
 
 link:00._Course_Material/01._Assignments/09._Documentation/09b._Create_OpenAPI_Documentation.md[09b <Individual> Create OpenAPI Documentation]
 
-| 10. Event-driven architecture
-| May 2nd
-a|
-* Event-driven architecture
-* RedisLabs
-* GraphQL
-* Apollo 
-* Ariadne
-a|
-* Understand event-driven architecture and what it aims to solve.
-* Can think of cases where event-driven architecture is useful.
-* Understands what Pub/sub and Streams are and can contrast and compare. 
-* Can compare Redis with RabitMQ and Kafka. 
-* Understands the problem that GraphQL solves.
-a|
-link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10a._SMS_Integration.md[10a SMS Integration]
-
-link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10b._Email_Integration.md[10a Email Integration]
-
-// todo graphQL assignment
-
 link:https://www.gentlydownthe.stream/[Gently Down the Stream]
 
-link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
-| 11. Webscraping
-| May 16th
+| 10. Webscraping
+| May 2nd
 a|
-* Redis is Node.js and Python
-* Redis (Advanced)
-* Redis Pub/sub
-* Redis Streams
 * Webscraping
 * Cheerio
 * BeautifulSoup4
 * Scrapy
+* Packaging
 * Exam Q&A
 a|
 * Can explain the difference between data scraping and web crawling. 
 * Can web scrape in a language.
 *  
 a|
+link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10a._SMS_Integration.md[10a SMS Integration]
 
+link:00._Course_Material/01._Assignments/10._Event-driven_architecture/10b._Email_Integration.md[10a Email Integration]
 
-
-
+link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
 
 

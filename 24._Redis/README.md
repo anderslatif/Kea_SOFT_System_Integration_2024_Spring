@@ -30,3 +30,14 @@ To run the Redis benchmark tool:
 ```bash
 $ docker run -it --network redis-net --rm redis redis-benchmark -h my-redis -p 6379
 ```
+
+---
+
+# Install Redis locally
+
+Mac:
+https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-on-mac-os/
+
+Windows:
+https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/install-redis-on-windows/
+
