@@ -208,15 +208,15 @@ link:https://www.youtube.com/watch?v=UNUz1-msbOM[Kafka Video]
 link:https://www.gentlydownthe.stream/[Gently Down the Stream]
 
 
-| 10. Webscraping
+| 10. Webscraping / GraphQL / Packaging
 | May 2nd
 a|
-* Webscraping
+* link:00._Course_Material/02._Slides/Web_Scraping/Web_Scraping_Crawling.md[Web Scraping]
 * Cheerio
 * BeautifulSoup4
 * Scrapy
 * Packaging
-* GraphQL
+* link:00._Course_Material/02._Slides/GraphQL/GraphQL.md[GraphQL]
 * Exam Q&A
 a|
 * Can explain the difference between data scraping and web crawling. 
@@ -224,7 +224,9 @@ a|
 * Understands the problems that GraphQL solves.
 *  
 a|
-link:00._Course_Material/01._Assignments/10._WebScraping_GraphQL/10a._GraphQL.md[10a GraphQL]
+link:00._Course_Material/01._Assignments/10._Web_Scraping_GraphQL/10a._GraphQL.md[10a GraphQL]
+
+link:00._Course_Material/01._Assignments/10._Web_Scraping_GraphQL/10b._Integrate_With_Payment.md[10b Integrate with payment]
 
 link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
