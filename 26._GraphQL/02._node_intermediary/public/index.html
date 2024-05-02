@@ -2,37 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GraphQL</title>
+    <title>Graphql</title>
 </head>
 <body>
-    <h1>GraphQL</h1>
-
+    <h3>Graphql</h3>
+    
     <p>Key: </p>
     <div id="key"></div>
 
     <p>Value: </p>
     <div id="value"></div>
 
+
     <script>
-        const query = `query {
+        const helloQuery = `query {
             hello
         }`;
 
         fetch("/graphql", {
             method: "POST",
+            body: JSON.stringify({
+                query: helloQuery
+            }),
             headers: {
                 "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                query
-            })
+            }
         })
-        .then((response) => response.json())
-        .then((result) => {
+        .then(response => response.json())
+        .then(({data}) => {
             document.getElementById("key").innerText = Object.keys(data)[0];
             document.getElementById("value").innerText = data.hello;
         });
     </script>
+
 </body>
 </html>
