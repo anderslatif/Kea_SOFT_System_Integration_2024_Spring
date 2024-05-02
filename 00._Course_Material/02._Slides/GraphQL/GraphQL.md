@@ -95,7 +95,7 @@ https://docs.github.com/en/graphql/overview/explorer
 
 Useful commands:
 
-`CTRL/OPTION + SPACE` for autocomplete.
+`CTRL/OPTION + SPACE` for autocomplete or `SHIFT + SPACE`.
 
 `CTRL/CMD + ENTER` to run the query.
 
@@ -189,6 +189,27 @@ Remember to make the String required with `!`.
 
 ---
 
+# Github GraphQL API - Search
+
+```graphql
+{
+  search (first: 10, query: "kea", type: REPOSITORY) {
+    nodes {
+      ... on Issue {
+        author {
+          login
+        }
+      }
+			... on Repository {
+        name
+        nameWithOwner
+      }
+    }
+  }
+}
+```
+
+---
 
 <div class="title-card" style="color: cyan;">
     <h1>Implementing GraphQL</h1>

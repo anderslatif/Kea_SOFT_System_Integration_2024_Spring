@@ -228,6 +228,8 @@ link:00._Course_Material/01._Assignments/10._Web_Scraping_GraphQL/10a._GraphQL.m
 
 link:00._Course_Material/01._Assignments/10._Web_Scraping_GraphQL/10b._Integrate_With_Payment.md[10b Integrate with payment]
 
+link:00._Course_Material/01._Assignments/00._Mandatories/02._Mandatory_II.md[**MANDATORY II**]
+
 link:00._Course_Material/00._Meta_Course_Material/exam_requirements.md[Exam Requirements]
 
 
