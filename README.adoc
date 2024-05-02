@@ -221,8 +221,7 @@ a|
 a|
 * Can explain the difference between data scraping and web crawling. 
 * Can web scrape in a language.
-* Understands the problems that GraphQL solves.
-*  
+* Understands the problems that GraphQL solves.  
 a|
 link:00._Course_Material/01._Assignments/10._Web_Scraping_GraphQL/10a._GraphQL.md[10a GraphQL]
 
