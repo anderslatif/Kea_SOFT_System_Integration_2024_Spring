@@ -156,8 +156,9 @@ a|
 * MPEG-DASH
 a|
 * Knows how to send multi-part forms over HTML and how to set it up in at least one server language.
-* Can think of use cases for how to store media files.
-* Can think of use cases for how to stream media files.
+* Can think of ways store media files.
+* Can explain how to send media files from client to server.
+* Can explain how to send media files from server to client.
 a|
 
 
